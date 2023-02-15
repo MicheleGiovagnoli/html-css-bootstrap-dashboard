@@ -1,11 +1,11 @@
 /* MAIN */
 
-main {
+/* SIDE-BAR */
+.center {
+    width: 120px;
     height: calc(100vh - 56.2px);
 }
-
-/* SIDE-BAR */
-.side-bar {
-    width: 120px;
-    height: 100%;
+.top-bar {
+    /* DEBUG */
+    height: 100px;
 }
