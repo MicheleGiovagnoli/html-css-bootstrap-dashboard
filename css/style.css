@@ -1,11 +1,24 @@
 /* MAIN */
 
 /* SIDE-BAR */
-.center {
-    width: 120px;
-    height: calc(100vh - 56.2px);
+.ms_side-bar {
+    height: calc(100vh - 56px);
 }
-.top-bar {
+.ms_center {
+    width: 120px;   
+}
+.ms_top-bar {
     /* DEBUG */
     height: 100px;
+}
+
+.ms_center {
+    overflow-y: scroll;
+    height: calc(100vh - 56px);
+}
+.ms_center-left {
+    width: 60%;
+}
+.ms_center-right {
+    width: 40%;
 }
