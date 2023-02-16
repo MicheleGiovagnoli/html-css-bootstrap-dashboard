@@ -23,15 +23,15 @@
                 </a>
 
                 <!-- SEARCH -->
-                
                     <form class="container-fluid">
                       <div class="input-group">
-                        <i id="basic-addon1" class="input-group-text fa-solid fa-magnifying-glass"></i>
+                        <span class="input-group-text">
+                            <i id="basic-addon1" class="fa-solid fa-magnifying-glass"></i>
+                        </span>
                         <input value="Prova a cercare:Lezioni di laravel" type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                        
                       </div>
                     </form>
-                
 
                 <!-- OPTION -->
                 <a class="navbar-brand" href="#">
@@ -88,17 +88,33 @@
         <section class="ms_center bg-primary-subtle w-100">
 
             <!-- TOP-BAR -->
-            <div class="ms_top-bar container-fluid bg-primary-subtle d-flex justify-content-between">
+            <div class="ms_top-bar container-fluid d-flex flex-column flex-md-row justify-content-between">
+
                 <!-- TOP-LEFT -->
+                <div class="ms_top-left py-3 pe-5 order-md-2">
+                    <span class="text-white">Nuovo Studente </span>
+                    <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                        <div class="offcanvas-header">
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                        </div>
+                        <div class="offcanvas-body">
+                            ...
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- TOP-CENTER -->
                 <!-- breadcrumb#1 -->
-                <div class="ms_top-left text-white py-3">
+                <div class="ms_top-center text-white py-3 order-md-0">
                     <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
                         <ol class="breadcrumb mb-0">
                             <li class="breadcrumb-item">
                                 <h3>Boolean</h3>
                             </li>
                             <li class="breadcrumb-item active mt-2" aria-current="page">
-                                <span class="badge rounded-pill text-bg-primary">Primary</span>
+                                <span class="badge rounded-pill">Primary</span>
                             </li>
                         </ol>
                     </nav>
@@ -107,39 +123,25 @@
                     <nav class="text-white" style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item">
-                                <span class="badge rounded-pill text-bg-primary">3 app</span>  
+                                <span class="badge rounded-pill ">3 app</span>  
                             </li>
                             <li class="breadcrumb-item active" aria-current="page">
-                                <span class="badge rounded-pill text-bg-primary d-none d-lg-inline-block">Boolean mobile app</span>
-                                <span class="badge rounded-pill text-bg-primary d-none d-lg-inline-block">Boolean web app</span>
-                                <span class="badge rounded-pill text-bg-primary d-none d-lg-inline-block">Boolean blog app</span>
-                                <span class="badge rounded-pill text-bg-primary d-lg-none">+</span>
+                                <span class="badge rounded-pill d-none d-lg-inline-block">Boolean mobile app</span>
+                                <span class="badge rounded-pill d-none d-lg-inline-block">Boolean web app</span>
+                                <span class="badge rounded-pill d-none d-lg-inline-block">Boolean blog app</span>
+                                <span class="badge rounded-pill d-lg-none">+</span>
                             </li>
                         </ol>
                     </nav>
 
                 </div>
 
-                <!-- TOP-CENTER -->
-                <div class="ms_top-center">
-                    ciaoo
-
-                </div>
-
                 <!-- TOP-RIGHT -->
-                <div class="ms_top-right">
-                    <button class="btn btn-primary" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Toggle right offcanvas</button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-                    <div class="offcanvas-header">
-                        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                    <div class="offcanvas-body">
-                        ...
-                    </div>
-                    </div>
-
+                <div class="ms_top-right text-white py-3 order-md-1">
+                    <span>Studenti online negli ultimi 30 minuti</span>
+                    <h3>125</h3>
                 </div>
+
 
             </div>
 
