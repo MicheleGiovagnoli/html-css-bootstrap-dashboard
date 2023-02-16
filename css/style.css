@@ -29,6 +29,10 @@
 .ms_center-right {
     width: 40%;
 }
+tbody td {
+    text-align: center;
+
+}
 
 
 
