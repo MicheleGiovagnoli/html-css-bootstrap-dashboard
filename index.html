@@ -56,19 +56,19 @@
                     <a href="#">
                         <i class="fa-solid fa-house px-2 text-white"></i>
                     </a>
-                    <div class="d-none d-lg-inline-block">ciaoo</div>
+                    <div class="d-none d-lg-inline-block">Home</div>
                 </div>
                 <div class="d-flex py-2">
                     <a href="#">
                         <i class="fa-solid fa-chart-simple px-2 text-white"></i>
                     </a>
-                    <div class="d-none d-lg-inline-block">ciaoo</div>
+                    <div class="d-none d-lg-inline-block">Stats</div>
                 </div>
                 <div class="d-flex py-2">
                     <a href="#">
                         <i class="fa-solid fa-signal px-2 text-white"></i>
                     </a>
-                    <div class="d-none d-lg-inline-block">ciaoo</div>
+                    <div class="d-none d-lg-inline-block">Signals</div>
                 </div>
             </div>
 
@@ -78,7 +78,7 @@
                     <a href="#">
                         <i class="fa-solid fa-gear px-2 text-white"></i>
                     </a>
-                    <div class="d-none d-lg-inline-block">ciaoo</div>
+                    <div class="d-none d-lg-inline-block">Admin</div>
                 </div>
             </div>
         </aside>
@@ -94,13 +94,68 @@
                 <div class="ms_top-left py-3 pe-5 order-md-2">
                     <span class="text-white">Nuovo Studente </span>
                     <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">+</button>
-                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                    <div class="offcanvas offcanvas-end w-50" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                         <div class="offcanvas-header">
-                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                            <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci un nuovo studente</h5>
                             <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                         </div>
-                        <div class="offcanvas-body">
-                            ...
+                        <div class="offcanvas-body"> 
+                            <form class="row g-3">
+                                <div class="col-md-6">
+                                    <label for="inputEmail4" class="form-label">Nome</label>
+                                    <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                    <label for="inputPassword4" class="form-label">Cognome</label>
+                                    <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputEmail4" class="form-label">Email</label>
+                                  <input type="email" class="form-control" id="inputEmail4">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputPassword4" class="form-label">Password</label>
+                                  <input type="password" class="form-control" id="inputPassword4">
+                                </div>
+                                <div class="col-12">
+                                  <label for="inputAddress" class="form-label">Indirizzo</label>
+                                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                                </div>
+                                <div class="col-md-6">
+                                  <label for="inputCity" class="form-label">Citta</label>
+                                  <input type="text" class="form-control" id="inputCity">
+                                </div>
+                                <div class="col-md-4">
+                                  <label for="inputState" class="form-label">Stato</label>
+                                  <select id="inputState" class="form-select">
+                                    <option selected>Scegli...</option>
+                                    <option>...</option>
+                                  </select>
+                                </div>
+                                <div class="col-md-2">
+                                  <label for="inputZip" class="form-label">CAP</label>
+                                  <input type="text" class="form-control" id="inputZip">
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">Foto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                  <div class="form-check">
+                                    <input class="form-check-input" type="checkbox" id="gridCheck">
+                                    <label class="form-check-label" for="gridCheck">
+                                      Seleziona per proseguire
+                                    </label>
+                                  </div>
+                                </div>
+                                <div class="col-12">
+                                  <button type="submit" class="btn btn-primary">Sign in</button>
+                                  <button type="submit" class="btn btn-warning">Svuota</button>
+                                </div>
+                                
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -159,9 +214,9 @@
                                 <table class="table">
                                     <thead>
                                     <tr>
-                                        <td scope="col" class="col-8">nome</td>
-                                        <td scope="col">Data inizio</td>
-                                        <td scope="col">ROI</td>
+                                        <td scope="col" class="col-6">nome</td>
+                                        <td scope="col" class="d-none d-sm-table-cell">Data inizio</td>
+                                        <td scope="col" class="d-none d-sm-table-cell">ROI</td>
                                         <td scope="col">Stato</td>
                                         <td scope="col">Azioni</td>
                                     </tr>
@@ -172,16 +227,16 @@
                                             <img src="img/class-avatar.jpg" alt="logo" width="30" class="rounded-circle">
                                             <span>Classe 75</span>
                                         </th>
-                                        <td>15 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none d-sm-table-cell">15 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
                                         <td>
                                             <span class="badge text-bg-success">Done</span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-pen"></i>
                                             </button>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-trash"></i>
                                             </button>
                                         </td>
@@ -192,16 +247,16 @@
                                             <img src="img/class-avatar.jpg" alt="logo" width="30" class="rounded-circle">
                                             <span>Classe 76</span>
                                         </th>
-                                        <td>16 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none d-sm-table-cell">16 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
                                         <td>
                                             <span class="badge text-bg-success">Done</span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-pen"></i>
                                             </button>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-trash"></i>
                                             </button>
                                         </td>
@@ -212,16 +267,16 @@
                                             <img src="img/class-avatar.jpg" alt="logo" width="30" class="rounded-circle">
                                             <span>Classe 77</span>
                                         </th>
-                                        <td>17 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none d-sm-table-cell">17 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
                                         <td>
                                             <span class="badge text-bg-warning">Process</span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-pen"></i>
                                             </button>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-trash"></i>
                                             </button>
                                         </td>
@@ -232,16 +287,16 @@
                                             <img src="img/class-avatar.jpg" alt="logo" width="30" class="rounded-circle">
                                             <span>Classe 78</span>
                                         </th>
-                                        <td>18 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none d-sm-table-cell">18 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
                                         <td>
                                             <span class="badge text-bg-success">Done</span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-pen"></i>
                                             </button>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-trash"></i>
                                             </button>
                                         </td>
@@ -252,16 +307,16 @@
                                             <img src="img/class-avatar.jpg" alt="logo" width="30" class="rounded-circle">
                                             <span>Classe 79</span>
                                         </th>
-                                        <td>19 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none d-sm-table-cell">19 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
                                         <td>
                                             <span class="badge text-bg-danger">failed</span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-pen"></i>
                                             </button>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-trash"></i>
                                             </button>
                                         </td>
@@ -272,16 +327,16 @@
                                             <img src="img/class-avatar.jpg" alt="logo" width="30" class="rounded-circle">
                                             <span>Classe 80</span>
                                         </th>
-                                        <td>20 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none d-sm-table-cell">20 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
                                         <td>
                                             <span class="badge text-bg-success">done</span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-pen"></i>
                                             </button>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-trash"></i>
                                             </button>
                                         </td>
@@ -292,16 +347,16 @@
                                             <img src="img/class-avatar.jpg" alt="logo" width="30" class="rounded-circle">
                                             <span>Classe 81</span>
                                         </th>
-                                        <td>21 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none d-sm-table-cell">21 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
                                         <td>
                                             <span class="badge text-bg-danger">failed</span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-pen"></i>
                                             </button>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-trash"></i>
                                             </button>
                                         </td>
@@ -312,16 +367,16 @@
                                             <img src="img/class-avatar.jpg" alt="logo" width="30" class="rounded-circle">
                                             <span>Classe 82</span>
                                         </th>
-                                        <td>22 Feb 2021</td>
-                                        <td>20%</td>
+                                        <td class="d-none d-sm-table-cell">22 Feb 2021</td>
+                                        <td class="d-none d-sm-table-cell">20%</td>
                                         <td>
                                             <span class="badge text-bg-success">done</span>
                                         </td>
                                         <td>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-pen"></i>
                                             </button>
-                                            <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                            <button class="btn btn-outline-dark" type="button">
                                                 <i class="fa-solid fa-trash"></i>
                                             </button>
                                         </td>
