@@ -1,27 +1,25 @@
-/* MAIN */
-
 /* SIDE-BAR */
 .ms_side-bar {
     height: calc(100vh - 56px);
     background-image: url(../img/sidebar-bg.png);
     background-color: rgb(11, 35, 57);
 }
-.breadcrumb-item+.breadcrumb-item::before {
-    color: white;
-}
-.ms_center {
-    width: 120px;   
-}
+
+/* TOPBAR */
 .ms_top-bar {
     background-color: rgb(27, 114, 232);
 }
+
+/* ETICHETTE */
 .breadcrumb li span {
     background-color: rgb(22, 91, 186);
 }
 
+/* CENTER */
 .ms_center {
     overflow-y: scroll;
     height: calc(100vh - 56px);
+    width: 120px;
 }
 .ms_center-left {
     width: 60%;
@@ -29,13 +27,17 @@
 .ms_center-right {
     width: 40%;
 }
+
+/* REGOLE VARIE */
 tbody td {
     text-align: center;
-
 }
 
+.breadcrumb-item+.breadcrumb-item::before {
+    color: white;
+}
 
-
+/* RESPONSIVE */
 @media screen and (max-width:768px) {
     .ms_content-center {
         flex-direction: column;
@@ -49,3 +51,4 @@ tbody td {
         width: 100%;
     }
 }
+
