@@ -3,6 +3,8 @@
 /* SIDE-BAR */
 .ms_side-bar {
     height: calc(100vh - 56px);
+    background-image: url(../img/sidebar-bg.png);
+    background-color: rgb(11, 35, 57);
 }
 .ms_center {
     width: 120px;   
@@ -21,4 +23,20 @@
 }
 .ms_center-right {
     width: 40%;
+}
+
+
+
+@media screen and (max-width:768px) {
+    .ms_content-center {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .ms_center-left {
+        width: 100%;
+    }
+    .ms_center-right {
+        width: 100%;
+    }
 }
