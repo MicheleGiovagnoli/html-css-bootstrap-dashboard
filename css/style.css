@@ -6,6 +6,9 @@
     background-image: url(../img/sidebar-bg.png);
     background-color: rgb(11, 35, 57);
 }
+.breadcrumb-item+.breadcrumb-item::before {
+    color: white;
+}
 .ms_center {
     width: 120px;   
 }

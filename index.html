@@ -88,11 +88,35 @@
         <section class="ms_center bg-primary-subtle w-100">
 
             <!-- TOP-BAR -->
-            <div class="ms_top-bar container-fluid bg-info d-flex justify-content-between">
-
+            <div class="ms_top-bar container-fluid bg-primary-subtle d-flex justify-content-between">
                 <!-- TOP-LEFT -->
-                <div class="ms_top-left">
-                    ciaoo
+                <!-- breadcrumb#1 -->
+                <div class="ms_top-left text-white py-3">
+                    <nav style="--bs-breadcrumb-divider: '';" aria-label="breadcrumb">
+                        <ol class="breadcrumb mb-0">
+                            <li class="breadcrumb-item">
+                                <h3>Boolean</h3>
+                            </li>
+                            <li class="breadcrumb-item active mt-2" aria-current="page">
+                                <span class="badge rounded-pill text-bg-primary">Primary</span>
+                            </li>
+                        </ol>
+                    </nav>
+
+                    <!-- breadcrumb#2 --> 
+                    <nav class="text-white" style="--bs-breadcrumb-divider: '»';" aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item">
+                                <span class="badge rounded-pill text-bg-primary">3 app</span>  
+                            </li>
+                            <li class="breadcrumb-item active" aria-current="page">
+                                <span class="badge rounded-pill text-bg-primary d-none d-lg-inline-block">Boolean mobile app</span>
+                                <span class="badge rounded-pill text-bg-primary d-none d-lg-inline-block">Boolean web app</span>
+                                <span class="badge rounded-pill text-bg-primary d-none d-lg-inline-block">Boolean blog app</span>
+                                <span class="badge rounded-pill text-bg-primary d-lg-none">+</span>
+                            </li>
+                        </ol>
+                    </nav>
 
                 </div>
 
